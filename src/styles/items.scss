@@ -1,0 +1,18 @@
+:root {
+  background-color: $background-color;
+  color: $primary-color;
+}
+
+main {
+  margin-left: 5rem;
+}
+
+.logo-container {
+  height: 100rem;
+  width: 100rem;
+}
+
+.logo {
+  filter: invert(92%) sepia(5%) saturate(332%) hue-rotate(345deg)
+    brightness(107%) contrast(91%);
+}
