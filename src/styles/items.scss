@@ -22,6 +22,7 @@ body {
   }
   margin: 0;
   padding: 0;
+  height: 100vh;
 }
 
 main {
@@ -37,8 +38,9 @@ main {
   background-color: $nav-background;
   width: 3.75rem;
   transition: 200ms;
+  z-index: 100;
   &:hover {
-    width: 9rem;
+    width: 10rem;
     .link-text {
       display: block;
     }
@@ -89,7 +91,7 @@ main {
   filter: grayscale(100%) opacity(0.7);
   transition: $transition-speed;
   i {
-    margin: 0 0.5rem 0 1.25rem;
+    margin: 0 0.5rem 0 1rem;
   }
   &:hover {
     filter: grayscale(0%) opacity(1);
@@ -103,6 +105,10 @@ main {
   margin-left: 1rem;
 }
 
+.nav-icon {
+  font-size: 1.5rem;
+}
+
 .fas,
 .fab,
 .far {
@@ -110,18 +116,47 @@ main {
   transition: $transition-speed;
 }
 
+// *<------------------------Quote---------------------------->
+
+.quote-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.home-quote {
+  font-size: 4rem;
+}
+
 // *<------------------------FRONT COVER LOGO---------------------------->
 
 .logo-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 50rem;
-  width: 100%;
-  z-index: 0;
+  align-items: flex-start;
+  margin: -1rem;
 }
 
 .front-cover {
   filter: invert(92%) sepia(5%) saturate(332%) hue-rotate(345deg)
     brightness(107%) contrast(91%);
+  height: 80%;
+  width: 50%;
+}
+
+// *<------------------------FOOTER---------------------------->
+
+footer {
+  margin-top: auto;
+}
+
+.socials-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.socials {
+  font-size: 2.5rem;
+  margin: 0 20px 10px 0;
 }
