@@ -24,6 +24,24 @@
   }
 }
 
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 :root {
   font: 16px;
   background-color: #1f1f1f;
@@ -216,6 +234,8 @@ main {
 
 .social-link {
   text-decoration: none;
+  -webkit-animation: fade-in 3s ease;
+          animation: fade-in 3s ease;
 }
 
 .socials {
