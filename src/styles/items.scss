@@ -24,6 +24,7 @@ body {
   height: 100vh;
   color: $color-1;
   font-family: "Bitter", serif;
+  box-sizing: border-box;
 }
 
 main {
@@ -243,6 +244,9 @@ h1 {
   width: 40%;
   height: 80%;
   box-shadow: 5px 10px 10px black;
+  backdrop-filter: blur(5px);
+  animation: fade-in;
+  animation-duration: $transition-speed;
 }
 
 .page-header {
@@ -258,4 +262,81 @@ h1 {
   font-size: 4rem;
   width: 20%;
   font-family: "EB Garamond", serif;
+  animation: fade-in;
+  animation-duration: $transition-speed;
+}
+
+// *<------------------------BLOG PAGE---------------------------->
+
+.default-page-header {
+  @include margin-default;
+}
+
+.blog-header {
+  background: rgba($scrollbar-track-color, 0.5);
+}
+
+.blog-container {
+  background: linear-gradient($background-color, $color-4);
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  .blog-card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    @include flex-center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    &:hover {
+      .blog-content {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+    .blog-content {
+      padding: 20px;
+      text-align: center;
+      transition: 0.5s;
+      opacity: 0;
+      transform: translateY(100px);
+      .count {
+        position: absolute;
+        top: -140px;
+        right: 10px;
+        font-size: 7em;
+        font-family: "Libre Baskerville", serif;
+        color: rgba($color-1, 0.05);
+        pointer-events: none;
+      }
+      .blog-heading {
+        z-index: 1;
+      }
+      .blog-date,
+      .blog-des {
+        font-weight: 300;
+      }
+      a {
+        position: relative;
+        display: inline-block;
+        padding: 8px 20px;
+        margin-top: 15px;
+        background: $color-1;
+        color: $scrollbar-track-color;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 0 5px 15px rgba($scrollbar-track-color, 0.2);
+      }
+    }
+  }
 }

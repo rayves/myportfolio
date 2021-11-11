@@ -18,7 +18,7 @@
     
 </head>
 
-<body>
+<body class="background">
     <header>
         <nav class="navbar">
             <ul class="navbar-nav">
@@ -64,8 +64,71 @@
                 </li>
             </ul>
         </nav>
+        <h1 class="default-page-header blog-header">Blog</h1>
     </header>
     <main>
+        <section class="blog-container">
+            <div class="blog-card">
+                <div class="blog-content">
+                    <p class="count">06</p>
+                    <img src="" alt="" class="blog-img">
+                    <h2 class="blog-heading">TODAYS BLOG</h2>
+                    <p class="blog-date">01/01/2020</p>
+                    <p class="blog-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores libero architecto explicabo delectus incidunt eum soluta possimus veniam voluptatum non quaerat ea nisi nulla, amet reiciendis? Sit ipsa vitae excepturi.</p>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <div class="blog-content">
+                    <p class="count">05</p>
+                    <img src="" alt="" class="blog-img">
+                    <h2 class="blog-heading">TODAYS BLOG</h2>
+                    <p class="blog-date">01/01/2020</p>
+                    <p class="blog-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores libero architecto explicabo delectus incidunt eum soluta possimus veniam voluptatum non quaerat ea nisi nulla, amet reiciendis? Sit ipsa vitae excepturi.</p>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <div class="blog-content">
+                    <p class="count">04</p>
+                    <img src="" alt="" class="blog-img">
+                    <h2 class="blog-heading">TODAYS BLOG</h2>
+                    <p class="blog-date">01/01/2020</p>
+                    <p class="blog-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores libero architecto explicabo delectus incidunt eum soluta possimus veniam voluptatum non quaerat ea nisi nulla, amet reiciendis? Sit ipsa vitae excepturi.</p>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <div class="blog-content">
+                    <p class="count">03</p>
+                    <img src="" alt="" class="blog-img">
+                    <h2 class="blog-heading">TODAYS BLOG</h2>
+                    <p class="blog-date">01/01/2020</p>
+                    <p class="blog-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores libero architecto explicabo delectus incidunt eum soluta possimus veniam voluptatum non quaerat ea nisi nulla, amet reiciendis? Sit ipsa vitae excepturi.</p>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="" alt="" class="blog-img">
+                <div class="blog-content">
+                    <p class="count">02</p>
+                    <h2 class="blog-heading">TODAYS BLOG</h2>
+                    <p class="blog-date">01/01/2020</p>
+                    <p class="blog-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores libero architecto explicabo delectus incidunt eum soluta possimus veniam voluptatum non quaerat ea nisi nulla, amet reiciendis? Sit ipsa vitae excepturi.</p>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="" alt="" class="blog-img">
+                <div class="blog-content">
+                    <p class="count">01</p>
+                    <h2 class="blog-heading">TODAYS BLOG</h2>
+                    <p class="blog-date">01/01/2020</p>
+                    <p class="blog-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores libero architecto explicabo delectus incidunt eum soluta possimus veniam voluptatum non quaerat ea nisi nulla, amet reiciendis? Sit ipsa vitae excepturi.</p>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="socials-container">
@@ -85,6 +148,17 @@
 
 
     </footer>
+    <!-- script for glass/3d effect for blog cards (taken from https://micku7zu.github.io/vanilla-tilt.js/) -->
+    <script type="text/javascript" src="../scripts/vanilla-tilt.js">
+    </script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".blog-card"),{
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max glare": 1,
+	});
+    </script>
 </body>
 
 </html>
