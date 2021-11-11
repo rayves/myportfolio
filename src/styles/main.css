@@ -110,7 +110,7 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  background-color: black;
+  background-color: #000000;
 }
 
 .logo img {
@@ -194,6 +194,9 @@ main {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .nav-link i {
+    margin: 0 0 0 0;
   }
   main {
     margin: 0;

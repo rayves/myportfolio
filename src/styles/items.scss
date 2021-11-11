@@ -54,7 +54,7 @@ main {
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: black;
+  background-color: $scrollbar-track-color;
   img {
     transform: rotateY(0deg);
     transition: $transition-speed;
@@ -121,6 +121,9 @@ main {
   }
   .nav-link {
     justify-content: center;
+    i {
+      margin: 0 0 0 0;
+    }
   }
   main {
     margin: 0;
