@@ -1,9 +1,12 @@
+// *<------------------//General styles applied throughout portfolio------------------>
+// clarifying font size for whole portfolio
 :root {
   font: 16px;
 }
 
 body {
   // *<------------------------SCROLLBAR---------------------------->
+  // Changes size of scrollbar and scrollbar track as well as the static and hover color
   &::-webkit-scrollbar {
     width: 0.5rem;
   }
@@ -42,7 +45,7 @@ h1 {
 }
 
 // *<------------------------NAVIGATOR---------------------------->
-
+// top level container for navigator
 .navbar {
   position: fixed;
   background-color: $nav-background;
@@ -50,6 +53,7 @@ h1 {
   z-index: 100;
 }
 
+// container holding individual navigation icons and a links
 .navbar-nav {
   list-style: none;
   padding: 0;
@@ -59,6 +63,7 @@ h1 {
   height: 100%;
 }
 
+// personal logo set at top of navbar
 .logo {
   display: flex;
   justify-content: center;
@@ -70,6 +75,7 @@ h1 {
   }
 }
 
+// img element of logo - filter needed to be applied as the file is coded as an image and not an svg path. Using the attached link (https://codepen.io/sosuke/pen/Pjoqqp) i converted the hex color code to correct filter values.
 .nav-logo {
   filter: invert(92%) sepia(5%) saturate(332%) hue-rotate(345deg)
     brightness(107%) contrast(91%);
@@ -77,12 +83,15 @@ h1 {
   width: 3.5rem;
 }
 
+// container used to hold a link
 .nav-item {
   width: 100%;
 }
 
+// container holding icon and inline text seperately for alignment adjustments
 .nav-link {
-  display: flex;
+  display: grid;
+  grid-template-columns: 40% 0;
   align-items: center;
   height: 3rem;
   color: $color-3;
@@ -131,6 +140,7 @@ h1 {
     flex-direction: row;
   }
   .nav-link {
+    display: flex;
     justify-content: center;
     i {
       margin: 0 0 0 0;
@@ -148,7 +158,7 @@ h1 {
     height: 100vh;
     width: 3.75rem;
     &:hover {
-      width: 10rem;
+      width: 9rem;
       .link-text {
         display: block;
       }

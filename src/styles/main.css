@@ -141,9 +141,10 @@ h1 {
 }
 
 .nav-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 0;
+      grid-template-columns: 40% 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -202,6 +203,9 @@ h1 {
             flex-direction: row;
   }
   .nav-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -221,7 +225,7 @@ h1 {
     width: 3.75rem;
   }
   .navbar:hover {
-    width: 10rem;
+    width: 9rem;
   }
   .navbar:hover .link-text {
     display: block;
