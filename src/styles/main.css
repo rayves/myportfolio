@@ -192,6 +192,7 @@ h1 {
     bottom: 0;
     width: 100vw;
     height: 3.75rem;
+    margin-top: auto;
   }
   .logo {
     display: none;
@@ -240,28 +241,6 @@ h1 {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-}
-
-.logo-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 93vh;
-}
-
-.front-cover {
-  -webkit-filter: invert(92%) sepia(5%) saturate(332%) hue-rotate(345deg) brightness(107%) contrast(91%);
-          filter: invert(92%) sepia(5%) saturate(332%) hue-rotate(345deg) brightness(107%) contrast(91%);
-  width: 100%;
-  height: 100%;
-  -webkit-animation: rotate-round 3s ease;
-          animation: rotate-round 3s ease;
 }
 
 .socials-container {
@@ -315,6 +294,28 @@ h1 {
   }
 }
 
+.logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 93vh;
+}
+
+.front-cover {
+  -webkit-filter: invert(92%) sepia(5%) saturate(332%) hue-rotate(345deg) brightness(107%) contrast(91%);
+          filter: invert(92%) sepia(5%) saturate(332%) hue-rotate(345deg) brightness(107%) contrast(91%);
+  width: 100%;
+  height: 100%;
+  -webkit-animation: rotate-round 3s ease;
+          animation: rotate-round 3s ease;
+}
+
 .about-root {
   background-image: url(../imgs/About/5162018-485.jpg);
   background-size: cover;
@@ -332,17 +333,17 @@ h1 {
           flex-direction: column;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  position: absolute;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding: 0 2em 20em 2em;
   top: 5rem;
-  left: 10rem;
-  width: 40%;
+  left: 10em;
+  width: 45%;
   height: 80%;
   -webkit-box-shadow: 5px 10px 10px black;
           box-shadow: 5px 10px 10px black;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+  -webkit-transition: ease;
+  transition: ease;
   -webkit-animation: fade-in;
           animation: fade-in;
   -webkit-animation-duration: 600ms;
@@ -355,19 +356,82 @@ h1 {
 }
 
 .quote-container {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  left: 73rem;
-  top: 5rem;
-  font-size: 4rem;
-  width: 20%;
+  position: absolute;
+  top: 15%;
+  left: 60%;
+  font-size: 4em;
   font-family: "EB Garamond", serif;
   -webkit-animation: fade-in;
           animation: fade-in;
   -webkit-animation-duration: 600ms;
           animation-duration: 600ms;
+  -webkit-transition: ease;
+  transition: ease;
+}
+
+.dp {
+  display: none;
+}
+
+.dp img {
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  -o-object-fit: none;
+     object-fit: none;
+  -o-object-position: -520px 40%;
+     object-position: -520px 40%;
+  border-radius: 50%;
+}
+
+@media only screen and (min-width: 856px) and (max-width: 1464px) {
+  .quote-container {
+    top: 0%;
+  }
+  .about-block {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .about-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
+  }
+  .about-block {
+    position: relative;
+    padding: 0 0.5em 0em 2em;
+    width: 95%;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+    margin-bottom: 60px;
+  }
+  .quote-container {
+    position: relative;
+    left: 0;
+    top: 30px;
+    font-size: 3em;
+  }
+  p {
+    margin-top: 0;
+  }
+  .dp {
+    display: block;
+  }
 }
 
 .default-page-header {
