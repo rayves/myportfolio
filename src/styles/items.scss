@@ -367,7 +367,7 @@ h1 {
 }
 
 .card-container {
-  background: linear-gradient($background-color, $color-4, $background-color);
+  background: $content-box-grad;
   position: relative;
   display: flex;
   justify-content: space-evenly;
@@ -460,7 +460,7 @@ h1 {
 // *<------------------------PROJECTS PAGE---------------------------->
 
 .projects-container {
-  background: linear-gradient($background-color, $color-4, $background-color);
+  background: $content-box-grad;
   position: relative;
   display: flex;
   justify-content: space-evenly;
@@ -564,7 +564,7 @@ h1 {
 .contact-page-layout {
   display: flex;
   @include flex-center;
-  background: linear-gradient($background-color, $color-4, $background-color);
+  background: $content-box-grad;
   height: 100%;
   padding-bottom: 8rem;
 }
@@ -581,6 +581,7 @@ h1 {
   label {
     display: block;
     padding: 17px 0 5px 0;
+    font-weight: bold;
   }
   input,
   textarea {
@@ -591,9 +592,12 @@ h1 {
     font-size: 1rem;
     outline: none;
     border-radius: 5px;
-    padding: 4px 0;
+    padding: 6px 0;
+    padding-left: 10px;
     border: 2px solid #ccc;
     font-family: "Bitter", serif;
+    background-color: $background-color;
+    color: white;
     &:valid,
     &:focus {
       border-color: $color-2;
@@ -621,6 +625,48 @@ h1 {
         color: orange;
         letter-spacing: 1px;
       }
+    }
+  }
+}
+
+// *<------------------------INDIVIDUAL BLOG PAGE---------------------------->
+
+.blog-art-container {
+  background: $content-box-grad;
+  display: flex;
+  @include flex-center;
+  padding: 2% 4% 2% 4%;
+  margin: 2% 20vh 5% 15vh;
+  flex-direction: column;
+  box-shadow: 1px 0 3px black, -1px 0 3px black;
+  img {
+    height: auto;
+    width: 30%;
+  }
+}
+.blog-header {
+  margin: 0.5rem 0 0.5rem 0;
+  padding: 0;
+  font-size: 2.2rem;
+}
+
+.blog-date {
+  padding: 0;
+  margin: 0 0 1rem 0;
+  font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 501px) and (max-width: 1000px) {
+  .blog-art-container {
+    margin: 2% 3vh 5% 3vh;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .blog-art-container {
+    margin: 2% 0 20% 0;
+    img {
+      width: 70%;
     }
   }
 }

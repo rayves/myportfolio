@@ -9,6 +9,11 @@ $color-5: #e0b682;
 $scrollbar-hover: #9c5500;
 $scrollbar-track-color: #000000;
 $nav-background: #0a0a0a;
+$content-box-grad: linear-gradient(
+  $background-color,
+  $color-4,
+  $background-color
+);
 
 //*Boxes
 $b-trans-box: rgba(0, 0, 0, 0.7);
