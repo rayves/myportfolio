@@ -479,11 +479,10 @@ h1 {
       @include flex-center;
       flex-direction: column;
       height: 100%;
-      // padding: 20px;
       text-align: center;
       transition: 0.5s;
-      // opacity: 0;
-      // transform: translateY(100px);
+      opacity: 0;
+      transform: translateY(100px);
       .blog-heading {
         position: absolute;
         top: 0.25rem;
@@ -521,6 +520,10 @@ h1 {
   }
 }
 
+.project-logo {
+  color: white;
+}
+
 @media only screen and (min-width: 501px) {
   .projects-container {
     .project-card {
@@ -538,19 +541,12 @@ h1 {
   .h1-container {
     margin-top: 60px;
   }
-  .Project-container {
+  .projects-container {
     .project-card {
       .card-content {
         opacity: 1;
         transform: translatey(0);
-        .count {
-          top: -30px;
-        }
       }
     }
   }
-}
-
-.project-logo {
-  color: white;
 }

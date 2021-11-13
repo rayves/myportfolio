@@ -643,6 +643,9 @@ h1 {
   text-align: center;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
 }
 
 .projects-container .project-card .card-content .blog-heading {
@@ -684,6 +687,10 @@ h1 {
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+.project-logo {
+  color: white;
+}
+
 @media only screen and (min-width: 501px) {
   .projects-container .project-card:hover .card-content {
     -webkit-transform: translateY(0);
@@ -696,17 +703,10 @@ h1 {
   .h1-container {
     margin-top: 60px;
   }
-  .Project-container .project-card .card-content {
+  .projects-container .project-card .card-content {
     opacity: 1;
     -webkit-transform: translatey(0);
             transform: translatey(0);
   }
-  .Project-container .project-card .card-content .count {
-    top: -30px;
-  }
-}
-
-.project-logo {
-  color: white;
 }
 /*# sourceMappingURL=main.css.map */
