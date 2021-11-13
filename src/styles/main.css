@@ -285,6 +285,11 @@ h1 {
 }
 
 @media only screen and (min-width: 600px) {
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
   .socials-container {
     -webkit-box-align: end;
         -ms-flex-align: end;
@@ -436,17 +441,32 @@ h1 {
 
 .default-page-header {
   font-size: 3em;
-  margin-top: 20px;
-  padding-top: 0.5rem;
-  padding-left: 200px;
+  margin-top: 10px;
   margin-bottom: 0;
 }
 
-.blog-header {
+.h1-container {
   background: rgba(0, 0, 0, 0.5);
+  padding-bottom: 10px;
+  -webkit-box-shadow: 0 5px 10px #de7a00;
+          box-shadow: 0 5px 10px #de7a00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation: fade-in;
+          animation: fade-in;
+  -webkit-animation-duration: 600ms;
+          animation-duration: 600ms;
 }
 
-.blog-container {
+.blog-header {
+  text-shadow: 2px 2px #de7a00;
+}
+
+.card-container {
   background: -webkit-gradient(linear, left top, left bottom, from(#1f1f1f), to(#4d4d4d));
   background: linear-gradient(#1f1f1f, #4d4d4d);
   position: relative;
@@ -461,9 +481,14 @@ h1 {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 50px;
+  -webkit-animation: fade-in;
+          animation: fade-in;
+  -webkit-animation-duration: 600ms;
+          animation-duration: 600ms;
 }
 
-.blog-container .blog-card {
+.card-container .card {
   position: relative;
   width: 300px;
   height: 400px;
@@ -488,13 +513,7 @@ h1 {
           backdrop-filter: blur(5px);
 }
 
-.blog-container .blog-card:hover .blog-content {
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-  opacity: 1;
-}
-
-.blog-container .blog-card .blog-content {
+.card-container .card .card-content {
   padding: 20px;
   text-align: center;
   -webkit-transition: 0.5s;
@@ -504,7 +523,7 @@ h1 {
           transform: translateY(100px);
 }
 
-.blog-container .blog-card .blog-content .count {
+.card-container .card .card-content .count {
   position: absolute;
   top: -140px;
   right: 10px;
@@ -514,16 +533,16 @@ h1 {
   pointer-events: none;
 }
 
-.blog-container .blog-card .blog-content .blog-heading {
+.card-container .card .card-content .blog-heading {
   z-index: 1;
 }
 
-.blog-container .blog-card .blog-content .blog-date,
-.blog-container .blog-card .blog-content .blog-des {
+.card-container .card .card-content .blog-date,
+.card-container .card .card-content .blog-des {
   font-weight: 300;
 }
 
-.blog-container .blog-card .blog-content a {
+.card-container .card .card-content a {
   position: relative;
   display: inline-block;
   padding: 8px 20px;
@@ -535,5 +554,27 @@ h1 {
   font-weight: bold;
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (min-width: 501px) {
+  .card-container .card:hover .card-content {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .h1-container {
+    margin-top: 60px;
+  }
+  .card-container .card .card-content {
+    opacity: 1;
+    -webkit-transform: translatey(0);
+            transform: translatey(0);
+  }
+  .card-container .card .card-content .count {
+    top: -30px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
