@@ -108,6 +108,10 @@ h1 {
           animation-duration: 600ms;
 }
 
+b {
+  color: #de7a00;
+}
+
 .navbar {
   position: fixed;
   background-color: #0a0a0a;
@@ -972,6 +976,14 @@ h1 {
 .pro-lang-box i {
   font-size: 3rem;
   margin: 10px;
+}
+
+#cv {
+  color: #29f1ff;
+}
+
+#cv:hover {
+  color: #ffffff;
 }
 
 @media only screen and (max-width: 500px) {

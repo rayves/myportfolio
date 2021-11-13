@@ -30,6 +30,7 @@ body {
   box-sizing: border-box;
 }
 
+// margin to avoid overlapping with nav
 main {
   margin-left: 5rem;
   padding: 1rem;
@@ -58,6 +59,10 @@ h1 {
   display: flex;
   justify-content: center;
   @include fade-in;
+}
+
+b {
+  color: $color-2;
 }
 
 // *<------------------------NAVIGATOR---------------------------->
@@ -763,20 +768,23 @@ h1 {
     font-size: 3rem;
     margin: 10px;
   }
-  // height: 80%;
-  // width: auto;
+}
+
+#cv {
+  color: #29f1ff;
+  &:hover {
+    color: $color-1;
+  }
 }
 
 @media only screen and (max-width: 500px) {
   .journey-page {
     display: flex;
     flex-direction: column;
-    // flex-wrap: wrap;
     @include flex-center;
     height: 100%;
   }
   .content-box {
-    // padding-bottom: 6rem;
     margin-bottom: 80px;
   }
 }
