@@ -724,3 +724,59 @@ h1 {
     flex-wrap: wrap;
   }
 }
+
+// *<------------------------JOURNEY  PAGE---------------------------->
+
+.journey-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: stretch;
+  height: 100%;
+  background: $content-box-grad;
+}
+
+.content-box {
+  background: rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  box-shadow: 5px 10px 10px black;
+  backdrop-filter: blur(5px);
+  // width: 50%;
+  padding: 0 30px 20px 15px;
+  margin: 10px;
+  // width: 50%;
+  height: auto;
+  transition: ease;
+  animation: fade-in;
+  animation-duration: $transition-speed;
+  overflow: auto;
+}
+
+.pro-lang-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  i {
+    font-size: 3rem;
+    margin: 10px;
+  }
+  // height: 80%;
+  // width: auto;
+}
+
+@media only screen and (max-width: 500px) {
+  .journey-page {
+    display: flex;
+    flex-direction: column;
+    // flex-wrap: wrap;
+    @include flex-center;
+    height: 100%;
+  }
+  .content-box {
+    // padding-bottom: 6rem;
+    margin-bottom: 80px;
+  }
+}
