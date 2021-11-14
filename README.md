@@ -84,6 +84,8 @@ Finally, the contact page. The page features a form that allows users to send me
 
 The form has been styled in order to stay in theme with the design of the website. Each form input will light up the borders so that where focus is being applied is clear. All input areas have a 'required' attribute to validation in order to avoid accident message submittions or missing information that would make return contact difficult.
 
+# Color Palette
+![alt text](docs/color-palatte-named.png)
 # Tech Stack
 ## Planning
 - [Balsamiq Wireframes](https://balsamiq.com/)
