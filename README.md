@@ -16,6 +16,7 @@ The website was designed to be easily navigatable and engaging while easily unde
 - Social links on every page so external social linked can be easily accessed.
 - Navigator on left side of page for full screen to maximise screen view as monitors are wide, then switching to horizontal with smaller screens, again for maximum view and ease.
   - when a smaller screen is used, the navigator is tranformed from vertical on the left side to horizontal on the bottom to minic a mobile app experience. This is done through media queries
+- Current page in navigator is highlighted to show the current page the user is on.
 - Logically placed components using styling.
 - Logically used elements ie. <"header"> for headers. <"main"> for main area of content. <"section"> to seperate different sections. "h" tags only used for actual headers and not as styling. The purpose for all this is for clear accessibility.
 - All pages feature <"meta"> information for SEO purposes.
