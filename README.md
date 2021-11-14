@@ -28,6 +28,8 @@ Icons from [FontAwesome](https://fontawesome.com/) and [Devicon](https://devicon
 
 Fonts from [Google-Fonts](https://fonts.google.com/)
 
+3D tilt javascript sourced from [vanilla-tilt.js](https://micku7zu.github.io/vanilla-tilt.js/)
+
 The site's functionality and features are also detailed below as a walkthrough of each page.
 
 # Sitemap
