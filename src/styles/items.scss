@@ -681,6 +681,28 @@ b {
   font-size: 0.8rem;
 }
 
+// navigatation between blog/project pages
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  a {
+    text-decoration: none;
+    color: white;
+    transition: ease;
+    transition-duration: 0.5s;
+    &:hover {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// overwrite .page-nav for last blog
+.page-nav-end {
+  justify-content: flex-end;
+}
+
 // mid-larger screens
 @media only screen and (min-width: 501px) and (max-width: 1000px) {
   .blog-art-container {

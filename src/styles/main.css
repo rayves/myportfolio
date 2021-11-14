@@ -854,6 +854,36 @@ b {
   font-size: 0.8rem;
 }
 
+.page-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.page-nav a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: ease;
+  transition: ease;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.page-nav a:hover {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.page-nav-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 @media only screen and (min-width: 501px) and (max-width: 1000px) {
   .blog-art-container {
     margin: 2% 3vh 5% 3vh;
