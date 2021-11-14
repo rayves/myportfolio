@@ -209,6 +209,13 @@ b {
   transition: 600ms;
 }
 
+.highlighted {
+  -webkit-filter: grayscale(0%) opacity(1);
+          filter: grayscale(0%) opacity(1);
+  background: #4d4d4d;
+  color: #ffffff;
+}
+
 @media only screen and (max-width: 600px) {
   .navbar {
     bottom: 0;

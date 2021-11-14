@@ -1,23 +1,23 @@
+// set default background for page
 @mixin page-default {
   background-color: $background-color;
   color: $color-1;
 }
 
+// set default margin for pages
 @mixin margin-default {
   font-size: 3em;
   margin-top: 10px;
-  // margin-left: 10rem;
-  // padding-top: 0.2rem;
-  // padding-left: 200px;
   margin-bottom: 0;
-  // width: 100vh;
 }
 
+// flex centering
 @mixin flex-center {
   justify-content: center;
   align-items: center;
 }
 
+// animations
 @mixin fade-in {
   animation: fade-in;
   animation-duration: $transition-speed;

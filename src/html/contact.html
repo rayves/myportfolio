@@ -63,24 +63,27 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="./contact.html" class="nav-link">
+            <a href="./contact.html" class="nav-link highlighted">
               <i class="far fa-address-book nav-icon"></i>
               <span class="link-text">Contact</span>
             </a>
           </li>
         </ul>
       </nav>
+      <!-- page title as consistant throughout site -->
       <div class="h1-container">
         <h1 class="default-page-header blog-header">Contact Me</h1>
       </div>
     </header>
     <main>
+      <!-- form contained in section for layout adjustments when needed -->
       <section class="contact-page-layout">
         <form
           action="https://formspree.io/f/xvodneyg"
           method="POST"
           class="contact-form">
           <label> Name: </label>
+          <!-- formspree field names for plugin behaviour control -->
           <input
             type="text"
             name="_name"
@@ -104,6 +107,7 @@
           <label> Your message: </label>
           <textarea name="message" required></textarea>
           <div class="button-container">
+            <!-- button contained in form for action -->
             <button type="submit">Send</button>
           </div>
         </form>
@@ -112,6 +116,7 @@
     <!-- social links grouped together in footer -->
     <footer>
       <div class="socials-container">
+        <!-- target attribute set as _blank for new tab to open but also stay on this website. -->
         <a
           href="https://twitter.com/RaymondVo1"
           target="_blank"
@@ -148,7 +153,3 @@
     </footer>
   </body>
 </html>
-
-<!-- Icons -->
-
-<!-- <i class="fas fa-user-astronaut"></i> -->

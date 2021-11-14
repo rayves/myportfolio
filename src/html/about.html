@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- added meta elements for SEO purpose -->
     <meta name="description" content="Raymond Vo Portfolio">
     <meta name="keywords" content="HTML, CSS, software developer">
     <meta name="author" content="Raymond Vo">
@@ -38,7 +39,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="./about.html" class="nav-link">
+                    <a href="./about.html" class="nav-link highlighted">
                         <i class="fas fa-user-astronaut nav-icon"></i>
                         <span class="link-text">About</span>
                     </a>
@@ -71,7 +72,8 @@
         </nav>
     </header>
     <main class="about-main">
-        <div class="about-block">
+        <!-- simple page design, only 1 block of text with header nested with in for page aesthetic. -->
+        <section class="about-block">
             <h1 class="page-header">About</h1>
             <h2><b>Raymond,</b></h2>
             <p><b>Ex-Accountant | Present Software Developer</b></p>
@@ -79,11 +81,13 @@
             </p>
             <p>Welcome to my space and I hope you enjoy what you see.</p>
             <p>Through this space you can nagivate to see various projects and if you wish to send me a message, please either follow the social media links you see below or send a message via the form in the contact page.</p>
+            <!-- highlight were important information can be found using <b></b> tags -->
             <p>My <b>CV</b> is also downloadable in the <b>Journey</b> page. You won't miss it.</p>
             <p>When i'm not programming, I spend my days learning, as this world is limitless with information; attending art galleries; hopping between cafes; or simply relaxing with my cats enjoying some shows/films.</p>
             <p>I hope I can continue to evolve and create projects that you can enjoy.</p>
             <p>Thank you.</p>
-        </div>
+        </section>
+        <!-- personal photo that appears only for smaller screens as background image will be covered for smaller screens. -->
         <div class="dp">
             <img src="../imgs/About/Optimized-5162018-485.jpg" alt="dp">
         </div>
@@ -94,6 +98,7 @@
     <footer>
     <!-- social links grouped together in footer -->
         <div class="socials-container">
+            <!-- target attribute set as _blank for new tab to open but also stay on this website. -->
             <a href="https://twitter.com/RaymondVo1" target="_blank" rel="noopener noreferrer" class="social-link">
                 <i class="fab fa-twitter socials"></i>
             </a>
@@ -113,7 +118,3 @@
 </body>
 
 </html>
-
-<!-- Icons -->
-
-<!-- <i class="fas fa-user-astronaut"></i> -->

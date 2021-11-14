@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- added meta elements for SEO purpose -->
     <meta name="description" content="Raymond Vo Portfolio">
     <meta name="keywords" content="HTML, CSS, software developer">
     <meta name="author" content="Raymond Vo">
@@ -45,7 +46,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="./journey.html" class="nav-link">
+                    <a href="./journey.html" class="nav-link highlighted">
                         <i class="fas fa-briefcase nav-icon"></i>
                         <span class="link-text">Journey</span>
                     </a>
@@ -70,12 +71,15 @@
                 </li>
             </ul>
         </nav>
+        <!-- page title as consistant throughout site -->
         <div class="h1-container">
             <h1 class="default-page-header blog-header">Journey</h1>
           </div>
     </header>
     <main>
+        <!-- all page elements grouped into a section for easy manipulation and future proofing for when additional section are to be adde -->
         <section class="journey-page">
+            <!-- seperate content details have own divs for clear distinction -->
             <div class="content-box">
                 <h2>Experience</h2>
                 <ul>
@@ -123,6 +127,7 @@
                 </div>
             </div>
             <div class="content-box">
+                <!-- Various programming languages for demo display -->
                 <h2>Programming Languages/Frameworks</h2>
                 <div class="pro-lang-box">
                     <i class="devicon-html5-plain"></i>
@@ -139,8 +144,10 @@
         </section>
     </main>
     <!-- social links grouped together in footer -->
+    <!-- downloadable resume appearing only on this page. included in with footer for easy manipulation. Feature different color from the social links for easy indentification. -->
     <footer>
         <div class="socials-container">
+            <!-- target attribute set as _blank for new tab to open but also stay on this website. -->
             <a href="../cv/Raymond Vo - CV (1).pdf" class="social-link" download>
                 <i class="fas fa-file-download socials" id="cv"></i>
             </a>
@@ -163,7 +170,3 @@
 </body>
 
 </html>
-
-<!-- Icons -->
-
-<!-- <i class="fas fa-user-astronaut"></i> -->

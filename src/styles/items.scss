@@ -150,6 +150,13 @@ b {
   transition: $transition-speed;
 }
 
+// to highlight current page
+.highlighted {
+  filter: grayscale(0%) opacity(1);
+  background: $color-4;
+  color: $color-1;
+}
+
 // navigator media query - small screens
 @media only screen and (max-width: 600px) {
   .navbar {
@@ -199,6 +206,7 @@ b {
 
 // *<------------------------FOOTER---------------------------->
 
+// fix position to bottom of page
 .socials-container {
   display: flex;
   flex-direction: row;
@@ -207,6 +215,7 @@ b {
   width: 100%;
 }
 
+// animate social links
 .social-link {
   text-decoration: none;
   animation: fade-in 3s ease;
@@ -308,6 +317,7 @@ b {
   transition: ease;
 }
 
+// styling for display picture | only appears on smaller screens
 .dp {
   display: none;
   img {
@@ -320,6 +330,7 @@ b {
   }
 }
 
+// mid screen size media adjustment
 @media only screen and (min-width: 856px) and (max-width: 1464px) {
   .quote-container {
     top: 0%;
@@ -329,6 +340,7 @@ b {
   }
 }
 
+// smaller screens
 @media only screen and (max-width: 850px) {
   .about-main {
     display: flex;
@@ -371,6 +383,7 @@ b {
   color: $color-2;
 }
 
+// card styling and layout
 .card-container {
   background: $content-box-grad;
   position: relative;
@@ -432,6 +445,7 @@ b {
   }
 }
 
+// larger screen
 @media only screen and (min-width: 501px) {
   .card-container {
     .card {
@@ -445,6 +459,7 @@ b {
   }
 }
 
+// smaller screen
 @media only screen and (max-width: 500px) {
   .h1-container {
     margin-top: 60px;
@@ -464,6 +479,7 @@ b {
 
 // *<------------------------PROJECTS PAGE---------------------------->
 
+// utilises similar features to blog cards with adjustments so needed own class
 .projects-container {
   background: $content-box-grad;
   position: relative;
@@ -533,10 +549,12 @@ b {
   }
 }
 
+// reused already styled icons, applied different styles in a different class so this takes priority as this class is lower on the scss page
 .project-logo {
   color: white;
 }
 
+// larger screens
 @media only screen and (min-width: 501px) {
   .projects-container {
     .project-card {
@@ -550,6 +568,7 @@ b {
   }
 }
 
+// smaller screens
 @media only screen and (max-width: 500px) {
   .h1-container {
     margin-top: 60px;
@@ -573,9 +592,10 @@ b {
   height: 100%;
   padding-bottom: 8rem;
 }
+
+// styled contact forms similar to cards for consistant theme.
 .contact-form {
   margin-top: 50px;
-  // border: 5px solid red;
   padding: 25px;
   width: 500px;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
@@ -661,12 +681,14 @@ b {
   font-size: 0.8rem;
 }
 
+// mid-larger screens
 @media only screen and (min-width: 501px) and (max-width: 1000px) {
   .blog-art-container {
     margin: 2% 3vh 5% 3vh;
   }
 }
 
+// smaller screens
 @media only screen and (max-width: 500px) {
   .blog-art-container {
     margin: 2% 0 20% 0;
@@ -684,6 +706,7 @@ b {
   font-size: 2.2rem;
 }
 
+// youtube embed resize
 .blog-art-container {
   iframe {
     width: 560px;
@@ -714,6 +737,7 @@ b {
   }
 }
 
+// smaller screens
 @media only screen and (max-width: 500px) {
   .blog-art-container {
     iframe {
@@ -732,6 +756,7 @@ b {
 
 // *<------------------------JOURNEY  PAGE---------------------------->
 
+// grid layout for even distribution of page divs
 .journey-page {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -742,15 +767,14 @@ b {
   background: $content-box-grad;
 }
 
+// consistant stylings for all containers
 .content-box {
   background: rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   box-shadow: 5px 10px 10px black;
   backdrop-filter: blur(5px);
-  // width: 50%;
   padding: 0 30px 20px 15px;
   margin: 10px;
-  // width: 50%;
   height: auto;
   transition: ease;
   animation: fade-in;
@@ -758,6 +782,7 @@ b {
   overflow: auto;
 }
 
+// grid display of programming languages within its container
 .pro-lang-box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -770,6 +795,7 @@ b {
   }
 }
 
+// resume
 #cv {
   color: #29f1ff;
   &:hover {
@@ -777,6 +803,7 @@ b {
   }
 }
 
+// smaller screens
 @media only screen and (max-width: 500px) {
   .journey-page {
     display: flex;
